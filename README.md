@@ -16,7 +16,6 @@
 
 ![Interstitial Ad](screenshot/interstittialadlogcat.png)
 
-
 ## Rewarded Ad
 ![Reward Ad](screenshot/rewardad.png)
 
