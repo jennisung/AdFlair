@@ -25,16 +25,13 @@ import com.google.android.gms.ads.rewarded.RewardedAdLoadCallback;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
-
     private AdRequest bannerAdRequest;
     private AdView bannerAdView;
-
     private InterstitialAd mInterstitialAd;
     private AdRequest interstitialAdRequest;
     private AdRequest rewardedAdRequest;
     private Button rewardAdButton;
     private RewardedAd rewardedAd;
-
     private Button interstitialAdButton;
 
 
@@ -45,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         bannerAdView = findViewById(R.id.bannerAdView);
-
         interstitialAdButton = findViewById(R.id.MainActivityInterstitialAdButton);
         rewardAdButton = findViewById(R.id.MainActivityRewardAdButton);
 
@@ -55,8 +51,6 @@ public class MainActivity extends AppCompatActivity {
         setupInterstitialAdButton();
         setupRewardedAd();
         setupRewardedAdButton();
-
-
     }
 
 
@@ -85,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
                         // an ad is loaded.
                         mInterstitialAd = interstitialAd;
                         Log.i(TAG, "interstitial ad loaded");
-
                         // on successful ad load, define the full screen callback
                         // define a callback for the ad, if we have one
 
@@ -219,6 +212,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }
